@@ -7,7 +7,6 @@ import { Product } from './product.model';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'inventory-app';
   products: Product[];
   constructor(){
     this.products = [

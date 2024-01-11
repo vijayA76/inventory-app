@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Product } from '../product.model';
 
 @Component({
@@ -8,5 +8,11 @@ import { Product } from '../product.model';
 })
 export class ProductListComponent {
   @Input()
-  product!: Product;
+  productList !: Product[];
+  @Output()
+  onProductSelected !: EventEmitter<Product>;
+
+  constructor(){
+    this.onProductSelected = new EventEmitter();
+  }
 }

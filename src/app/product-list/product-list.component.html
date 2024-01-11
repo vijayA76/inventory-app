@@ -1,1 +1,6 @@
-<p>{{product.name}} - {{product.price}}</p>
+<div class="card">
+    <product-row
+        *ngFor="let myProduct of productList"
+        [product]="myProduct">
+    </product-row>
+</div>
