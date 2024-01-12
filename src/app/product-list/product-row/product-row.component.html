@@ -1,1 +1,26 @@
-<p>{{product.name}} - {{product.price}}</p>
+<div class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <div class="img-container" style="max-width: 200px; max-height: 200px; overflow: hidden;">
+        <img [src]="product.imageUrl" class="card-img" alt="{{product.name}}">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text">SKU#{{product.sku}}</p>
+        <p class="card-text">
+          <span *ngFor="let value of product.department; let i= index;">
+            <a href="#">{{value}}</a>
+            <span *ngIf="product.department.length-1 > i"> > </span>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card-body text-right">
+        <p class="card-text"><strong>Price:</strong> ${{product.price}}</p>
+      </div>
+    </div>
+  </div>
+</div>

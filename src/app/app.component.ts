@@ -12,22 +12,22 @@ export class AppComponent {
     this.products = [
       new Product(
         'MYSHOES',
-        'Black Running Shoes',
-        '',
-        ['Men','Shoes','Runnig Shoes'],
+        'Black Casual Shoes',
+        'assets/images/product/shoes.jpg',
+        ['Men','Shoes','Casual Shoes'],
         45.99
       ),
       new Product(
         'NEATOJACKET',
         'Blue Jacket',
-        '',
+        'assets/images/product/jacket.webp',
         ['Women','Apparel','Jacket & Vests'],
         55.99
       ),
       new Product(
         'NICEHAT',
         'A Nice Black Hat',
-        '',
+        'assets/images/product/hat.jpeg',
         ['Men','Accessories','Hats'],
         38.39
       ),
